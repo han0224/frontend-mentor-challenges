@@ -1,0 +1,32 @@
+body{
+    background-color: #222;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.listItem{
+    align-items: center;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 20px; 
+    /* background-image: url(/img/frame.png); */
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.listItem img{
+    border-radius: 10px;
+
+}
+
+.listItem p{
+    text-align: center;
+}
