@@ -1,32 +1,64 @@
+:root{
+    --yellow-color: #EED179;
+    --wood-color: #B0806A;
+    --green-color: #B0BA8D;
+    --light-green-color:#D0D3AA;
+    --light-yellow-color: #F1E9D8;
+}
+
 body{
-    background-color: #222;
+    background-color: var(--wood-color);
+    margin: 0;
+    overflow: hidden;
+}
+
+.white-background{
+    position: absolute;
+    width: 500px;
+    height: 302px;
+    background-color: var(--light-yellow-color);
+    text-align: center;
+    font-size: 30px;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .list{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.listItem{
-    align-items: center;
+.list-item{
     margin: auto;
-    background-color: aliceblue;
-    padding: 10px;
-    border-radius: 20px; 
-    /* background-image: url(/img/frame.png); */
-    background-size: cover;
+    text-align: center;
+}
+
+.list-item p{
+    margin-top: 0;
+}
+
+.preview{
+    width: 240px;
+    height: 200px;
+    transition: all .2s;
+}
+
+.preview:hover{
+    width: 250px;
+    height: 210px;
 }
 
 a{
     text-decoration: none;
-    color: #000;
+    font-size: 10px;
+    color: black;
 }
 
-.listItem img{
-    border-radius: 10px;
-
-}
-
-.listItem p{
-    text-align: center;
-}
+/* 
+버튼 추가해서 이미지 좌우로 이동
+중앙 이미지는 다른 이미지들보다 아래로
+ */
