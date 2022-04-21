@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+.rating {
+  width: 380px;
+  background: hsl(213, 19%, 18%);
+  border-radius: 15px;
+  padding: 30px;
+  margin: auto;
+}
+
+.rating h1 {
+  color: white;
+}
+.rating p {
+  color: hsl(217, 12%, 63%);
+}
+.star {
+  border-radius: 50%;
+  background-color: hsl(216, 12%, 24%);
+  padding: 10px;
+}
+.numbers {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: row;
+}
+.numbers input[type="radio"] {
+  display: none;
+}
+.numbers input[type="radio"] + label {
+  background-color: hsl(216, 12%, 24%);
+  color: white;
+  margin: auto;
+  text-align: center;
+  border-radius: 50%;
+  width: 25px;
+  padding: 15px;
+  transition: all 0.2s;
+}
+.numbers input[type="radio"] + label:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+.numbers input[type="radio"]:checked + label {
+  background-color: hsl(217, 12%, 63%);
+  color: #ffffff;
+}
+.btn {
+  border-radius: 20px;
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  transition: all 0.2s;
+}
+.btn:hover {
+  background-color: #ffffff;
+  color: hsl(25, 97%, 53%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.thankyou {
+  text-align: center;
+  width: 380px;
+  background: hsl(213, 19%, 18%);
+  border-radius: 15px;
+  padding: 30px;
+  margin: auto;
+}
+.thankyou h1 {
+  color: white;
+}
+.thankyou p {
+  color: hsl(217, 12%, 63%);
+}
+.thankyouImg {
+  margin: 10px;
+}
+.selected {
+  background-color: hsl(212, 20%, 13%);
+  border-radius: 20px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  padding: 5px 20px;
+  color: hsl(25, 97%, 53%);
+}
+@media (max-width: 400px) {
+  .rating {
+    width: 300px;
+    margin: auto;
+  }
+  .rating h1 {
+    margin: 5px;
+  }
+  .thankyou {
+    width: 300px;
+    margin: auto;
+  }
+  .btn {
+    margin: 5px;
+  }
+}

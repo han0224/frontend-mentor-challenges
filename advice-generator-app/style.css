@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+    --light-cyan-color: hsl(193, 38%, 86%);
+    --neon-green-color: hsl(150, 100%, 66%);
+    --grayish-blue-color: hsl(217, 19%, 38%);
+    --dark-grayish-blue-color: hsl(217, 19%, 24%);
+    --dark-blue-color: hsl(218, 23%, 16%);
+}
+body{
+    background-color: var(--dark-blue-color);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh; 
+    align-items: center;
+}
+.card{
+    position: relative;
+    background-color: var(--dark-grayish-blue-color);
+    width: 600px;
+    height: 300px;
+    display: flex;
+    margin: auto;
+    padding: 30px;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.adviceId{
+    padding-top: 50px;
+    position: absolute;
+    top: 0px;
+    color: var(--neon-green-color);
+    font-family: 'Manrope', sans-serif;
+}
+.adviceGoes{
+    padding: 40px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+    color: var(--light-cyan-color);
+}
+.line-desk{
+    position: absolute;
+    bottom: 70px;
+}
+.line-mobile{
+    visibility: hidden;
+}
+.btn{
+    border-radius: 100%;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: var(--neon-green-color);
+    position: absolute;
+    bottom: -30px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    box-shadow: 0px 0px 20px var(--neon-green-color);
+}
+
+@media (max-width: 375px){
+    
+    .card{
+        width: 300px;
+        margin: auto;
+    }
+    .adviceGoes{
+        padding: 20px;
+        font-size: 23px;
+    }
+    .btn{
+        width: 50px;
+        height: 50px;
+        bottom: -25px;
+    }
+    .line-desk{
+        visibility: hidden;
+    }
+    .line-mobile{
+        visibility: visible;
+    }
+}
