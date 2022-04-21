@@ -6,64 +6,82 @@
     --light-yellow-color: #F1E9D8;
 }
 
-body{
-    background-color: var(--wood-color);
+*{
     margin: 0;
-    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box; 
 }
-
-.white-background{
-    position: absolute;
-    width: 80vw;
-    height: 50vh;
-    background-color: var(--light-yellow-color);
-    text-align: center;
-    font-size: 30px;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.list{
-    height: 100vh;
-    display: flex; 
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
+    background: #f2f2f2;
 }
-/* 
-.list-item{
-    margin: auto;
+.container{
+    max-width: 950px;
+    background: red;
+    width: 100%;
+}
+.main-card .cards{
+    display: flex;
+    justify-content: space-between;
+
+}
+.main-card .cards .card{
+    background: #fff;
+    width: calc(100% / 3 -10px);
+}
+.cards .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
-
-.list-item p{
-    margin-top: 0;
-} */
-
-.slider{
-    position: relative;
-    margin: 0 auto;
+.cards .card .content .img{
+    height: 140px;
+    width: 140px;
+    margin-bottom: 15px;
 }
 
-.imgholder img{
-    width: 240px;
-    height: 200px;
-    transition: all .2s;
+.card .content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.imgholder img:hover{
-    width: 250px;
-    height: 210px;
+.card .content .details .name{
+    font-size: 20px;
+    font-weight: 500;
 }
 
-a{
-    text-decoration: none;
-    font-size: 10px;
-    color: black;
+.card .content .details .date{
+    font-size: 20px;
+    color: #B0806A;
+}
+.card .content .media-icons{
+    display: flex;
+    margin-top: 10px;
 }
 
-/* 
-버튼 추가해서 이미지 좌우로 이동
-중앙 이미지는 다른 이미지들보다 아래로
- */
+.card .content .media-icons a{
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    margin: 0 4px;
+    border-radius: 50%;
+    background-color: #B0806A;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+.content .media-icons a:hover{
+    border-color: #B0806A;
+    color: #B0806A;
+    background: #fff;
+}
