@@ -16,28 +16,25 @@ const projects = [
         blog: 'https://han0224.github.io/frontend%20mentor/calculator-app/',
     },
     
-    // {
-    //     name: 'interactive-rating-page-app',
-    // },
-    // {
-    //     name: 'interactive-rating-page-app',
-    // },
-    // {
-    //     name: 'interactive-rating-page-app',
-    // },
-    // {
-    //     name: 'interactive-rating-page-app',
-    // },
-    // {
-    //     name: 'interactive-rating-page-app',
-    // },
 ]
 
-// const contendDiv = document.querySelector('.content');
-// projects.forEach((v,i)=>{
-//     const img = document.createElement('img');
-//     img.src=`/${v.name}/design/desktop-preview.jpg`;
-//     img.alt=`${v.name}`;
-//     contendDiv.appendChild(img);
-
-// })
+const cardsDiv = document.querySelector('.cards');
+projects.forEach(v=>{
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+        <div class="content">
+            <div class="img">
+                <img src="/${v.name}/design/screenshot.png" alt="${v.name}">
+            </div>
+            <div class="details">
+                <div class="name">${v.name}</div>
+                <div class="date">${v.date}</div>
+            </div>
+            <div class="media-icons">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    `
+    cardsDiv.appendChild(card);
+})
