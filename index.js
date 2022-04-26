@@ -24,6 +24,7 @@ projects.forEach(v=>{
     card.className = 'card';
     card.innerHTML = `
         <div class="content">
+        <a href='/${v.name}/index.html'>
             <div class="img">
                 <img src="/${v.name}/design/screenshot.png" alt="${v.name}">
             </div>
@@ -34,6 +35,7 @@ projects.forEach(v=>{
             <div class="media-icons">
             <a href="#"><i class="fa-brands fa-github"></i></a>
             </div>
+            </a>
         </div>
     `
     cardsDiv.appendChild(card);

@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    text-decoration: none;
 }
 body{
     background: #EED179;
@@ -21,6 +22,10 @@ body::before{
     width: 100%;
     background: #F1E9D8;
 
+}
+a{
+    text-decoration: none;
+    color: rgb(113, 113, 113);
 }
 .container{
 }
@@ -100,4 +105,3 @@ body::before{
     -o-transform: rotate(240deg);
     transform: rotate(240deg);
 }
-  
